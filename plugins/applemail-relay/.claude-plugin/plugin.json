@@ -1,0 +1,9 @@
+{
+  "name": "applemail-relay",
+  "version": "0.1.0",
+  "description": "InboxPip connects selected inboxes to Claude for email briefings and reply drafts.",
+  "author": { "name": "Datenkraft Kupper" },
+  "homepage": "https://inboxpip.com",
+  "license": "MIT",
+  "keywords": ["email", "inbox", "calendar", "mcp", "productivity"]
+}

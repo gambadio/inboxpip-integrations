@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "applemail-relay",
+  "version": "0.1.0",
+  "description": "InboxPip connects selected inboxes to your agent for email briefings and reply drafts.",
+  "author": { "name": "Datenkraft Kupper" },
+  "homepage": "https://inboxpip.com",
+  "license": "MIT",
+  "keywords": ["email", "inbox", "calendar", "mcp", "productivity"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "InboxPip",
+        "shortDescription": "Brief your inbox. Draft the reply.",
+        "longDescription": "Read selected email accounts, find messages and prepare reply drafts. Each connection is restricted to the accounts and permissions you approve. Uses an existing InboxPip account.",
+        "developerName": "Datenkraft Kupper",
+        "category": "Productivity",
+        "capabilities": ["Summarize selected inboxes", "Find email and attachments", "Save reply drafts"],
+        "defaultPrompt": ["Summarize unread mail in my work inbox without changing anything.", "Find the receipt I need in my personal inbox.", "Draft a reply to the message I choose and show me before sending."],
+        "websiteURL": "https://inboxpip.com",
+        "privacyPolicyURL": "https://inboxpip.com/privacy",
+        "termsOfServiceURL": "https://inboxpip.com/terms",
+        "supportURL": "https://inboxpip.com/connect"
+      }
+    }
+  }
+}

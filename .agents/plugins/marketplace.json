@@ -1,0 +1,12 @@
+{
+  "name": "inboxpip",
+  "interface": { "displayName": "InboxPip" },
+  "plugins": [
+    {
+      "name": "applemail-relay",
+      "source": { "source": "local", "path": "./plugins/applemail-relay" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "category": "Productivity"
+    }
+  ]
+}

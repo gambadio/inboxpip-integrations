@@ -1,0 +1,11 @@
+# This repository contains only public integration files.
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+.mcpregistry*
+*.log
+*.pem
+*.key
+

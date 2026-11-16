@@ -1,0 +1,12 @@
+{
+  "name": "inboxpip",
+  "owner": { "name": "Datenkraft Kupper" },
+  "metadata": { "description": "InboxPip workflows for selected email accounts: inbox briefings and reply drafts." },
+  "plugins": [
+    {
+      "name": "applemail-relay",
+      "source": "./plugins/applemail-relay",
+      "description": "InboxPip: email briefings and reply drafts using your connected inboxes."
+    }
+  ]
+}

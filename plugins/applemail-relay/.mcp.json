@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "applemailmcp": { "type": "http", "url": "https://inboxpip.com/mcp" }
+  }
+}
