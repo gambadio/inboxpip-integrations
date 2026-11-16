@@ -58,11 +58,11 @@ Claude web custom connectors, ChatGPT custom connections and agent frameworks re
 ## Features and limits
 
 - Fourteen mail tools: discover granted accounts, list folders, search/read mail and attachments, save drafts, send approved messages, move/copy/flag messages, and manage custom folders. Exact availability depends on the current account and token permissions.
-- Multiple explicit inbox grants. Use `list_mail_accounts` first and pass its returned `accountId` with mail operations. Revoking, replacing or downgrading an inbox does not grant access to another one.
+- Multiple explicit inbox grants. Use `list_mail_accounts` first and pass the selected account's returned `id` as `accountId` with mail operations. Revoking, replacing or downgrading an inbox does not grant access to another one.
 - iCloud Calendar with separate permissions. Calendar is available; invitations and recurring-event changes are not supported.
 - Reminders and Notes remain beta and require the optional awake Mac companion. Notes supports plain-text reading and new notes, not editing existing notes or exporting locked notes and attachments.
 
-The implementation has 15 IMAP/SMTP setup presets; a preset is guidance, not proof every provider/account has passed a live test. SMTP sends mail; reading requires IMAP or a supported provider API. Google and Microsoft OAuth code is implemented, but the production provider applications still need registration and verification. Proton-style local bridges and private-network-only mail servers do not become accessible to this cloud service merely by entering an address.
+The implementation has 15 IMAP/SMTP setup presets; a preset is guidance, not proof every provider/account has passed a live test. SMTP sends mail; InboxPip currently reads through IMAP. Google and Microsoft OAuth code authenticates their IMAP/SMTP connections, but the production provider applications still need registration and verification. Proton-style local bridges and private-network-only mail servers do not become accessible to this cloud service merely by entering an address.
 
 ## Your controls
 
