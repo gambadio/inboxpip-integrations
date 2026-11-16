@@ -72,6 +72,6 @@ InboxPip is operated independently by Datenkraft Kupper. It is not affiliated wi
 
 ## Package layout and license
 
-`plugins/applemail-relay/plugin.json` and `mcp.json` use the portable Agent Plugins format. `.claude-plugin/plugin.json` and `.mcp.json` provide Claude's format. Both use the same two `skills/` directories. No secrets, private mailbox contents or backend code are included. The MIT license covers only this integration kit; the hosted service has separate terms. For security issues, follow [SECURITY.md](SECURITY.md).
+`plugins/applemail-relay/plugin.json` and `mcp.json` use the portable Agent Plugins format. `.claude-plugin/plugin.json` and `.mcp.json` provide Claude's format. Both use the same two `skills/` directories. No secrets, private mailbox contents or backend code are included. The portable plugin is licensed MIT, and the standalone ClawHub skill in `skills/inboxpip` is licensed MIT-0; the hosted service has separate terms. For security issues, follow [SECURITY.md](SECURITY.md).
 
 Current technical sources: [Claude MCP setup](https://code.claude.com/docs/en/mcp), [Claude plugin publishing](https://code.claude.com/docs/en/plugins/publish), [OpenAI plugin packaging](https://developers.openai.com/plugins/build/plugins), [OpenAI plugin guidelines](https://developers.openai.com/plugins/plugin-guidelines).
